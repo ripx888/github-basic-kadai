@@ -1,0 +1,32 @@
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % mkdir git_challenge
+cd git_challenge
+
+mkdir: git_challenge: File exists
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % git init
+
+Reinitialized existing Git repository in /Users/kamakuraryouma/git_challenge/git_challenge/.git/
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % echo " Hello, World! " > hello_world.txt  
+
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % ls
+hello_world.txt
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % cat hello_world.txt
+ Hello, World! 
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % echo " This is the first line of the file. " >> hello_world.txt
+
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % git add hello_world.txt
+git commit -m " Add Hello, World! to hello_world.txt "
+
+[main (root-commit) 0257e94]  Add Hello, World! to hello_world.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % echo " こんにちは、世界 " >> hello_world.txt
+
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % git add hello_world.txt
+git commit -m " Add こんにちは、世界 to hello_world.txt "
+
+[main 7343a60]  Add こんにちは、世界 to hello_world.txt
+ 1 file changed, 1 insertion(+)
+kamakuraryouma@kamakuraryoumanoMacBook-Pro git_challenge % git log --oneline
+
+7343a60 (HEAD -> main)  Add こんにちは、世界 to hello_world.txt
+0257e94  Add Hello, World! to hello_world.txt
